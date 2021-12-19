@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import { useProduct } from '../../context/ProductContext'
 import { useCart } from '../../context/CartContext'
 import { useEffect, useState } from 'react'
+import Products from '../../Dataset'
 
 
 const ProductDetail = () => {
@@ -10,7 +11,7 @@ const ProductDetail = () => {
     const { products } = useProduct()
     const { cartObj, dispatchCart } = useCart()
     const [disableValue, setDisableVlaue] = useState(false)
-    let product = products.product.find(ele => ele.id === id)
+    let product = Products.find(ele => ele.id === id)
 
 
     const addToBag = () => {
