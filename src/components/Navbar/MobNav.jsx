@@ -12,7 +12,7 @@ const MobNav = ({ open, setOpen }) => {
     return (
         <div className="mob_nav_container">
             <nav className="nav_container" >
-                <div className="nav_menu_logo_mob" onClick={() => { setOpen(!open) }}>
+                <div className="nav_menu_logo_mob" >
                     <i className="fas fa-bars fa-lg"></i>
                 </div>
                 <div className="nav_right_section_mob">
