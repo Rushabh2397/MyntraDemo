@@ -2,11 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { ProductProvider } from './context/ProductContext'
+import { CartProvider } from './context/CartContext'
+import { BrowserRouter } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <ProductProvider>
+        <CartProvider>
+          <App />
+        </CartProvider>
+      </ProductProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

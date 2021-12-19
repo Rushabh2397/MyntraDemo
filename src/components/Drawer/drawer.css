@@ -1,0 +1,28 @@
+.drawer_backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: calc(100vh - 54px);
+    background: rgb(0, 0, 0, 0.35);
+    
+}
+
+.drawer_container {
+    position: fixed;
+    top: 54px;
+    width: 0;
+    background: #fff;
+    min-height: calc(100vh - 54px);
+    z-index: 9999;
+    /* transition:  0.5ms ease; */
+    
+}
+
+.drawer_width{
+    width: 60%;
+    transition: width 200ms ease-in-out;
+    
+}
